@@ -8,7 +8,7 @@ switch(action.type){
 case 'makeOrder':
 return {
 ...state,
-BatQty:state.BatQty - 1
+BatQty:state.BatQty - action.payload
 }
 
 default: return state
