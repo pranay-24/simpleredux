@@ -1,7 +1,9 @@
-import {configureStore} from '@reduxjs/toolkit'
-import productReducer from './reducer'
+import {configureStore,combineReducers} from '@reduxjs/toolkit'
+import {batReducer,ballReducer} from './reducer'
 
-const store = configureStore ({reducer:productReducer})
+const rootReducer =combineReducers({bat:batReducer,ball:ballReducer})
+
+const store = configureStore ({reducer:rootReducer})
 
 export default store
 

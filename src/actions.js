@@ -1,8 +1,15 @@
-const MAKE_ORDER ='makeOrder'
+const BAT_ORDER ='batOrder'
+const BALL_ORDER ='ballOrder'
 
-export const makeOrder=(qty)=>{
+export const batOrder=(qty)=>{
 return {
-    type:MAKE_ORDER,
+    type:BAT_ORDER,
+    payload:qty
+}    
+}
+export const ballOrder=(qty)=>{
+return {
+    type:BALL_ORDER,
     payload:qty
 }    
 }

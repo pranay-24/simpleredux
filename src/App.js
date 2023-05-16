@@ -8,6 +8,7 @@ function App() {
   return (
     <Provider store={store}>
     <div>
+      <h1>Used Reducer to manage qty of product left </h1>
       <ProductComponent></ProductComponent>
     </div>
     </Provider>
